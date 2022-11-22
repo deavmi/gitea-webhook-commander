@@ -13,7 +13,7 @@ commands={
 	"homepage" : {
 		"dir": "/home/pi/HDD/temp/homepage",
 		"pre-command": ["git", "pull"],
-		"command": ["hugo"]
+		"command": ["hugo", "-d", "/home/pi/HDD/"]
 	},
 	"crxn" : {
 		"dir": "/home/pi/HDD/temp/crxn",
