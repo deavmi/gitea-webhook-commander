@@ -24,6 +24,21 @@ commands={
 		"dir": "/home/pi/HDD/temp/bnet",
 		"pre-command": ["git", "pull"],
 		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/bonobonet"]
+	},
+	"libtun": {
+		"dir": "/home/pi/HDD/temp/libtun",
+		"pre-command": ["git", "pull"],
+		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/libtun"]
+	},
+	"dlog": {
+		"dir": "/home/pi/HDD/temp/dlog",
+		"pre-command": ["git", "pull"],
+		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/dlog"]
+	},
+	"eventy": {
+		"dir": "/home/pi/HDD/temp/eventy",
+		"pre-command": ["git", "pull"],
+		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/eventy"]
 	}
 }
 
