@@ -39,6 +39,11 @@ commands={
 		"dir": "/home/pi/HDD/temp/eventy",
 		"pre-command": ["git", "pull"],
 		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/eventy"]
+	},
+	"tasky": {
+		"dir": "/home/pi/HDD/temp/tasky",
+		"pre-command": ["git", "pull"],
+		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/tasky"]
 	}
 }
 
