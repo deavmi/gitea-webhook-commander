@@ -18,12 +18,12 @@ commands={
 	"crxn" : {
 		"dir": "/home/pi/HDD/temp/crxn",
 		"pre-command": ["git", "pull"],
-		"command": ["mkdocs", "build"]
+		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/crxn"]
 	},
 	"bnet": {
 		"dir": "/home/pi/HDD/temp/bnet",
 		"pre-command": ["git", "pull"],
-		"command": ["mkdocs", "build"]
+		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/bonobonet"]
 	}
 }
 
