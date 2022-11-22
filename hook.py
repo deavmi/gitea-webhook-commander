@@ -10,12 +10,21 @@ app = Flask("thing")
 commands={
         "homepage" : {
                 "dir":"/home/pi/HDD/temp/homepage",
-                "command":"hugo"
+                "pre-command":["git", "pull"],
+                "command":["hugo"]
         },
         "crxn" : {
-                "dir":""
+                "dir":"/home/pi/HDD/temp/crxn",
+                "pre-command":["git", "pull"],
+                "command": ["mkdocs", "build"]
+        },
+        "bnet": {
+                "dir":"/home/pi/HDD/temp/bnet",
+                "pre-command":["git", "pull"],
+                "command": ["mkdocs", "build"]
         }
 }
+
 
 @app.route("/build/<site>", methods=["POST"])
 def buildHandler(site):
