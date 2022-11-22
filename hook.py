@@ -49,6 +49,11 @@ commands={
 		"dir": "/home/pi/HDD/temp/dnet",
 		"pre-command": ["git", "pull"],
 		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/dnet"]
+	},
+	"tlang": {
+		"dir": "/home/pi/HDD/temp/tlang",
+		"pre-command": ["git", "pull"],
+		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/tlang"]
 	}
 }
 
