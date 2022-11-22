@@ -46,6 +46,6 @@ def buildHandler(site):
 
 	# The deadline will probably be exceeded but flask
 	# wants this here
-	return None
+	return "Ok"
 
 app.run(host="::")
