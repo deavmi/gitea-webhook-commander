@@ -18,32 +18,32 @@ commands={
 	"crxn" : {
 		"dir": "/home/pi/HDD/temp/crxn",
 		"pre-command": ["git", "pull"],
-		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/crxn"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/crxn"]
 	},
 	"bnet": {
 		"dir": "/home/pi/HDD/temp/bnet",
 		"pre-command": ["git", "pull"],
-		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/bonobonet"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/bonobonet"]
 	},
 	"libtun": {
 		"dir": "/home/pi/HDD/temp/libtun",
 		"pre-command": ["git", "pull"],
-		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/libtun"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/libtun"]
 	},
 	"dlog": {
 		"dir": "/home/pi/HDD/temp/dlog",
 		"pre-command": ["git", "pull"],
-		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/dlog"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/dlog"]
 	},
 	"eventy": {
 		"dir": "/home/pi/HDD/temp/eventy",
 		"pre-command": ["git", "pull"],
-		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/eventy"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/eventy"]
 	},
 	"tasky": {
 		"dir": "/home/pi/HDD/temp/tasky",
 		"pre-command": ["git", "pull"],
-		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/tasky"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/tasky"]
 	},
 	"dnet": {
 		"dir": "/home/pi/HDD/temp/dnet",
@@ -53,7 +53,7 @@ commands={
 	"tlang": {
 		"dir": "/home/pi/HDD/temp/tlang",
 		"pre-command": ["git", "pull"],
-		"command": ["mkdocs", "build", "-d", "/home/pi/HDD/projects/tlang"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/tlang"]
 	}
 }
 
