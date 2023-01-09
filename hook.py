@@ -54,6 +54,16 @@ commands={
 		"dir": "/home/pi/HDD/temp/tlang",
 		"pre-command": ["git", "pull"],
 		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/tlang"]
+	},
+	"libpb": {
+		"dir": "/home/pi/HDD/temp/libpb",
+		"pre-command": ["git", "pull"],
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/libpb"]
+	},
+	"jstruct": {
+		"dir": "/home/pi/HDD/temp/jstruct",
+		"pre-command": ["git", "pull"],
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/jstruct"]
 	}
 }
 
