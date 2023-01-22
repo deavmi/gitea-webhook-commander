@@ -53,7 +53,8 @@ commands={
 	"tlang": {
 		"dir": "/home/pi/HDD/temp/tlang",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/tlang"]
+		#"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/pi/HDD/projects/tlang"]
+		"command": ["bash", "doall.sh"]
 	},
 	"libpb": {
 		"dir": "/home/pi/HDD/temp/libpb",
