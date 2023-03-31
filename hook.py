@@ -15,7 +15,7 @@ commands={
 
 def initCommands(file):
     global commands
-    commands = json.loads(file)
+    commands = json.loads(open(file, "r").read())
 
 @app.route("/build/<site>", methods=["POST"])
 def buildHandler(site):
