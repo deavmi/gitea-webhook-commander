@@ -13,7 +13,7 @@ app = Flask("thing")
 commands={
 }
 
-def initCommands():
+def initCommands(file):
     global commands
     commands = json.loads(file)
 
@@ -38,5 +38,5 @@ def buildHandler(site):
 	# wants this here
 	return "Ok"
 
-initCommands()
+initCommands("commands.json")
 app.run(host="fdd2:cbf2:61bd::2")
