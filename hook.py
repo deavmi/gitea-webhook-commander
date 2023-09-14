@@ -1,4 +1,4 @@
-#!/usr/bin/python3.9
+#!/usr/bin/python3
 
 from flask import request, Flask
 from flask.logging import logging
