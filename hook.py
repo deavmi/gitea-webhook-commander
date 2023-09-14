@@ -38,5 +38,5 @@ def buildHandler(site):
 	# wants this here
 	return "Ok"
 
-initCommands("/home/pi/HDD/temp/gitea-webhook-commander/commands.json")
+initCommands("commands.json")
 app.run(host="fdd2:cbf2:61bd::2")
