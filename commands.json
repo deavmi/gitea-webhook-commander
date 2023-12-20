@@ -42,7 +42,7 @@
 	"tlang": {
 		"dir": "/home/builder/src/tlang",
 		"pre-command": ["git", "pull"],
-		"command": ["bash", "doall.sh"]
+		"command": ["bash", "doall_relative.sh", "/home/builder/dump/projects/tlang"]
 	},
 	"libpb": {
 		"dir": "/home/builder/src/libpb",
