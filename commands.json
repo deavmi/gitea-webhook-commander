@@ -2,56 +2,56 @@
 	"homepage" : {
 		"dir": "/home/builder/src/homepage",
 		"pre-command": ["git", "pull"],
-		"command": ["hugo", "-d", "/home/builder/dump/"]
+		"command": ["hugo", "-d", "/mnt/datadisk/vols/nginx/html/"]
 	},
 	"crxn" : {
 		"dir": "/home/builder/src/crxn",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/builder/dump/projects/crxn"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/mnt/datadisk/vols/nginx/html/projects/crxn"]
 	},
 	"bnet": {
 		"dir": "/home/builder/src/bnet",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/builder/dump/projects/bonobonet"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/mnt/datadisk/vols/nginx/html/projects/bonobonet"]
 	},
 	"libtun": {
 		"dir": "/home/builder/src/libtun",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/builder/dump/projects/libtun"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/mnt/datadisk/vols/nginx/html/projects/libtun"]
 	},
 	"dlog": {
 		"dir": "/home/builder/src/dlog",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/builder/dump/projects/dlog"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/mnt/datadisk/vols/nginx/html/projects/dlog"]
 	},
 	"eventy": {
 		"dir": "/home/builder/src/eventy",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/builder/dump/projects/eventy"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/mnt/datadisk/vols/nginx/html/projects/eventy"]
 	},
 	"tasky": {
 		"dir": "/home/builder/src/tasky",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/builder/dump/projects/tasky"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/mnt/datadisk/vols/nginx/html/projects/tasky"]
 	},
 	"dnet": {
 		"dir": "/home/builder/src/dnet",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/builder/dump/projects/dnet"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/mnt/datadisk/vols/nginx/html/projects/dnet"]
 	},
 	"tlang": {
 		"dir": "/home/builder/src/tlang",
 		"pre-command": ["git", "pull"],
-		"command": ["bash", "doall_relative.sh", "/home/builder/dump/projects/tlang"]
+		"command": ["bash", "doall_relative.sh", "/mnt/datadisk/vols/nginx/html/projects/tlang"]
 	},
 	"libpb": {
 		"dir": "/home/builder/src/libpb",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/builder/dump/projects/libpb"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/mnt/datadisk/vols/nginx/html/projects/libpb"]
 	},
 	"jstruct": {
 		"dir": "/home/builder/src/jstruct",
 		"pre-command": ["git", "pull"],
-		"command": ["python3", "-m", "mkdocs", "build", "-d", "/home/builder/dump/projects/jstruct"]
+		"command": ["python3", "-m", "mkdocs", "build", "-d", "/mnt/datadisk/vols/nginx/html/projects/jstruct"]
 	}
 }
