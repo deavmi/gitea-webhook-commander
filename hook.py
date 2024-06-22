@@ -10,8 +10,19 @@ import json
 # Setup the Flask web app.
 app = Flask("thing")
 
+# Authorization
+#
+# If set to `None` then authorization
+# is ignored
+auth=None
+
+# Commands collection
 commands={
 }
+
+def initAuth():
+	global auth
+	auth=os.getenv("GITEA_WEBHOOK_AUTH")
 
 def initCommands(file):
     global commands
@@ -20,6 +31,19 @@ def initCommands(file):
 @app.route("/build/<site>", methods=["POST"])
 def buildHandler(site):
 	print("Requesting an automatic rebuild of '%s'"%(site))
+
+	# Extract the auth token
+	authHeader=request.headers["Authorization"]
+
+	# Do authorization check
+	#
+	# (only if auth is enabled ourside,
+	# irrespective of how Gitea was configured
+	# to send its headers)
+	global auth
+	if(auth != None and authHeader != auth):
+		print("The auth token '%s' doesn't match the configured one"%(authHeader))
+		return "Bad"; # FIXME: Return 300?
 
 	# Extract the correct mapping
 	item=commands[site]
@@ -38,5 +62,6 @@ def buildHandler(site):
 	# wants this here
 	return "Ok"
 
+initAuth()
 initCommands("commands.json")
 app.run(host="::")
