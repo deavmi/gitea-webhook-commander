@@ -3,7 +3,7 @@ gitea-webhook-commander
 
 Runs a given command in the given CWD based on the route called by Gitea
 
-## Setup
+## Commands
 
 You configure things in the `commands.json` file which looks
 something like this:
@@ -22,6 +22,9 @@ something like this:
 	}
 }
 ```
+
+
+## Authentication
 
 _Optionally_ you can set the environment variable `GITEA_WEBHOOK_AUTH` to
 a string containing the password that is expected to be present in the
