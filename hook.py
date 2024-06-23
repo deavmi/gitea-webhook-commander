@@ -45,6 +45,10 @@ def buildHandler(site):
 		print("The auth token '%s' doesn't match the configured one"%(authHeader))
 		return "Bad"; # FIXME: Return 300?
 
+	if(not (site in commands)):
+		print("No configuration for item '%s'"%(site))
+		return "Bad"; # FIXME: Return 300?
+
 	# Extract the correct mapping
 	item=commands[site]
 	itemDir=item["dir"]
